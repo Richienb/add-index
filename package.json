@@ -1,6 +1,6 @@
 {
 	"name": "add-index",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Add an item to an array and get its index.",
 	"repository": "https://github.com/Richienb/add-index.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
