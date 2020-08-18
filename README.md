@@ -1,41 +1,41 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# add-index [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/add-index/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/add-index)
 
-My awesome module.
+Add an item to an array and get its index.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/add-index.png)](https://npmjs.com/package/add-index)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install add-index
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const addIndex = require("add-index");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+const array = [1, 2, 3, 4, 5];
+
+addIndex(array, 6);
+//=> 5
+
+console.log(array);
+//=> [1, 2, 3, 4, 5, 6]
 ```
 
 ## API
 
-### theModule(input, options?)
+### addIndex(array, item)
 
-#### input
+#### array
 
-Type: `string`
+Type: `array`
 
-Lorem ipsum.
+The array to add to.
 
-#### options
+#### item
 
-Type: `object`
+Type: `any`
 
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The item to add.

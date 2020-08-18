@@ -1,15 +1,20 @@
 /**
-My awesome module.
-@param input Lorem ipsum.
-@param postfix Lorem ipsum.
+Add an item to an array and get its index.
+@param array The array to add to.
+@param item The item to add.
 @example
 ```
-const theModule = require("the-module");
+const addIndex = require("add-index");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+const array = [1, 2, 3, 4, 5];
+
+addIndex(array, 6);
+//=> 5
+
+console.log(array);
+//=> [1, 2, 3, 4, 5, 6]
 ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string
+declare function addIndex(array: any[], item: any): number
 
-export = theModule
+export = addIndex

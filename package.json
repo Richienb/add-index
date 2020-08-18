@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "add-index",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Add an item to an array and get its index.",
+	"repository": "https://github.com/Richienb/add-index.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,7 +17,17 @@
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
+	"keywords": [
+		"array",
+		"index",
+		"item",
+		"value",
+		"add",
+		"push",
+		"length",
+		"list",
+		"math"
+	],
 	"dependencies": {},
 	"devDependencies": {
 		"ava": "^3.11.1",

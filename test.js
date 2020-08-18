@@ -1,13 +1,9 @@
 const test = require("ava")
-const theModule = require(".")
+const addIndex = require(".")
 
 test("main", t => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number"
-	})
+	const array = [1, 2, 3, 4, 5]
 
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+	t.is(addIndex(array, 6), 5)
+	t.deepEqual(array, [1, 2, 3, 4, 5, 6])
 })
